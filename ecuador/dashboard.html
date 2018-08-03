@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!-- Mirrored from www.primefaces.org/ecuador/dashboard.xhtml by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Aug 2018 04:58:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="j_idt2">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+            <meta name="apple-mobile-web-app-capable" content="yes" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/theme.cssab41.css?ln=primefaces-ecuador-indigo" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/fa/font-awesome.css408e.css?ln=primefaces&amp;v=6.2" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/components.css408e.css?ln=primefaces&amp;v=6.2" /><script type="text/javascript" src="javax.faces.resource/jquery/jquery.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="javax.faces.resource/jquery/jquery-plugins.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="javax.faces.resource/core.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="javax.faces.resource/components.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><link type="text/css" rel="stylesheet" href="javax.faces.resource/schedule/schedule.css408e.css?ln=primefaces&amp;v=6.2" /><script type="text/javascript" src="javax.faces.resource/moment/moment.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><script type="text/javascript" src="javax.faces.resource/schedule/schedule.js408e.xhtml?ln=primefaces&amp;v=6.2"></script><link type="text/css" rel="stylesheet" href="javax.faces.resource/css/nanoscroller.css60d1.css?ln=ecuador-layout" /><link type="text/css" rel="stylesheet" href="javax.faces.resource/css/layout-indigo.css60d1.css?ln=ecuador-layout" /><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='en_US';}</script>
+        <title>Dashboard</title><script type="text/javascript" src="javax.faces.resource/js/nanoscroller.js60d1.xhtml?ln=ecuador-layout"></script><script type="text/javascript" src="javax.faces.resource/js/layout.js60d1.xhtml?ln=ecuador-layout"></script></head><body>
+        <div class="layout-wrapper layout-menu-static layout-menu-light">
+
+    <div class="layout-topbar">
+        <a href="#" id="topbar-menu-button">
+            <i class="fa fa-angle-left arrow"></i>
+            <i class="fa fa-angle-up mobile"></i>
+        </a>
+
+        <div class="search-input">
+            <i class="fa fa-search icon-search"></i>
+            <input type="text" />
+        </div><a href="dashboard.html" class="logo-container"><img id="j_idt13" src="javax.faces.resource/images/ecuador-logo.png60d1.png?ln=ecuador-layout" alt="" /></a>
+
+        <a id="topbar-profile-menu-button" href="#">
+            <span>Jeniffer Reynolds</span><img id="j_idt15" src="javax.faces.resource/images/avatar.png60d1.png?ln=ecuador-layout" alt="" class="topbar-profile" />
+            <i class="fa fa-angle-down"></i>
+        </a>
+
+        <ul id="topbar-usermenu">
+            <li>
+                <a href="#">
+                    <i class="fa fa-fw fa-user"></i>
+                    <span class="topbar-item-name">Profile</span>
+                    <span class="topbar-submenuitem-badge">4</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-fw fa-cog"></i>
+                    <span class="topbar-item-name">Settings</span>
+                    <span class="topbar-submenuitem-badge">2</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-paint-brush"></i>
+                            <span>Change</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-star-o"></i>
+                            <span>Favorites</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-lock"></i>
+                            <span>Lock Screen</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-picture-o"></i>
+                            <span>Wallpaper</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-fw fa-envelope-o"></i>
+                    <span class="topbar-item-name">Messages</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message"><img id="j_idt17" src="javax.faces.resource/images/avatar-brooke.png60d1.png?ln=ecuador-layout" alt="" width="25" />
+                            <span>Give me a call</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message"><img id="j_idt19" src="javax.faces.resource/images/avatar-tom.png60d1.png?ln=ecuador-layout" alt="" width="25" />
+                            <span>Reports attached</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message"><img id="j_idt21" src="javax.faces.resource/images/avatar-maggie.png60d1.png?ln=ecuador-layout" alt="" width="25" />
+                            <span>About your invoice</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message"><img id="j_idt23" src="javax.faces.resource/images/avatar-lucas.png60d1.png?ln=ecuador-layout" alt="" width="25" />
+                            <span>Meeting today</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-fw fa-bell-o"></i>
+                    <span class="topbar-item-name">Notifications</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-tasks"></i>
+                            <span>Pending tasks</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-calendar-check-o"></i>
+                            <span>Meeting today</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-download"></i>
+                            <span>Download</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="fa fa-fw fa-plane"></i>
+                            <span>Book flight</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <a href="#" id="right-panel-button">
+            <i class="fa fa-angle-double-left"></i>
+        </a>
+    </div>
+
+    <div id="layout-right-panel">
+        <div class="nano">
+            <div class="nano-content right-panel-scroll-content">
+
+                <span class="header">Message Box</span><div id="j_idt26" class="ui-accordion ui-widget ui-helper-reset ui-hidden-container" style="margin:5px 0px" role="tablist" data-widget="widget_j_idt26"><div class="ui-accordion-header ui-helper-reset ui-state-default ui-state-active ui-corner-top" role="tab" aria-expanded="true" aria-selected="true" tabindex="0"><span class="ui-icon ui-icon-triangle-1-s"></span>Inbox Messages</div><div id="j_idt26:j_idt27" class="ui-accordion-content ui-helper-reset ui-widget-content" role="tabpanel" aria-hidden="false">
+                        <ul>
+                            <li><img id="j_idt26:j_idt29" src="javax.faces.resource/images/avatar-maggie.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="message-container">
+                                    <span class="name">Maggie Walker</span>
+                                    <span class="message">Professionally cultivate one-to-one service.</span>
+                                </div>
+                            </li>
+                            <li><img id="j_idt26:j_idt31" src="javax.faces.resource/images/avatar-tom.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="message-container">
+                                    <span class="name">Tom Baker</span>
+                                    <span class="message">Dynamically innovate leveling state of art.</span>
+                                </div>
+                            </li>
+                            <li><img id="j_idt26:j_idt33" src="javax.faces.resource/images/avatar-brooke.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="message-container">
+                                    <span class="name">Brooke Wright</span>
+                                    <span class="message">Holisticly extensible testing procedures.</span>
+                                </div>
+                            </li>
+                        </ul></div><div class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><span class="ui-icon ui-icon-triangle-1-e"></span>Sent</div><div id="j_idt26:j_idt35" class="ui-accordion-content ui-helper-reset ui-widget-content ui-helper-hidden" role="tabpanel" aria-hidden="true">
+                        <ul>
+                            <li><img id="j_idt26:j_idt37" src="javax.faces.resource/images/avatar-tom.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="message-container">
+                                    <span class="name">Tom Baker</span>
+                                    <span class="message">Envisioned multimedia based expertise.</span>
+                                </div>
+                            </li>
+                            <li><img id="j_idt26:j_idt39" src="javax.faces.resource/images/avatar-lucas.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="message-container">
+                                    <span class="name">Lucas Fox</span>
+                                    <span class="message">Visualize quality intellectual capital.</span>
+                                </div>
+                            </li>
+                            <li><img id="j_idt26:j_idt41" src="javax.faces.resource/images/avatar-brooke.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="message-container">
+                                    <span class="name">Brooke Wright</span>
+                                    <span class="message">Engage worldwide methodologies.</span>
+                                </div>
+                            </li>
+                        </ul></div><div class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" role="tab" aria-expanded="false" aria-selected="false" tabindex="0"><span class="ui-icon ui-icon-triangle-1-e"></span>Drafts</div><div id="j_idt26:j_idt43" class="ui-accordion-content ui-helper-reset ui-widget-content ui-helper-hidden" role="tabpanel" aria-hidden="true">
+                        <ul>
+                            <li><img id="j_idt26:j_idt45" src="javax.faces.resource/images/avatar-lucas.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="message-container">
+                                    <span class="name">Lucas Fox</span>
+                                    <span class="message">Customer directed convergence.</span>
+                                </div>
+                            </li>
+                            <li><img id="j_idt26:j_idt47" src="javax.faces.resource/images/avatar-tom.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="message-container">
+                                    <span class="name">Tom Baker</span>
+                                    <span class="message">Installed base after maintainable products.</span>
+                                </div>
+                            </li>
+                            <li><img id="j_idt26:j_idt49" src="javax.faces.resource/images/avatar-maggie.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="message-container">
+                                    <span class="name">Maggie Walker</span>
+                                    <span class="message">Process-centric "outside the box" thinking.</span>
+                                </div>
+                            </li>
+                        </ul></div><input type="hidden" id="j_idt26_active" name="j_idt26_active" value="0" autocomplete="off" /></div><script id="j_idt26_s" type="text/javascript">PrimeFaces.cw("AccordionPanel","widget_j_idt26",{id:"j_idt26"});</script>
+
+                <i class="fa fa-ellipsis-h"></i>
+
+                <span class="header">Recent Activity</span><div id="j_idt52" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_j_idt52"><div id="j_idt52_content" class="ui-panel-content ui-widget-content">
+                    <ul>
+                        <li><img id="j_idt54" src="javax.faces.resource/images/avatar-lucas.png60d1.png?ln=ecuador-layout" alt="" />
+                            <div class="activity-container">
+                                <span class="name">Lucas Fox</span>
+                                <span class="activity">Does some magic with new magic wand.</span>
+                                <span class="activity-date">23.12.2015 12:00</span>
+                            </div>
+                        </li>
+                        <li><img id="j_idt56" src="javax.faces.resource/images/avatar-maggie.png60d1.png?ln=ecuador-layout" alt="" />
+                            <div class="activity-container">
+                                <span class="name">Maggie Walker</span>
+                                <span class="activity">Publish a new article named ‘How you doin?’</span>
+                                <span class="activity-date">23.12.2015 12:00</span>
+                            </div>
+                        </li>
+                        <li><img id="j_idt58" src="javax.faces.resource/images/avatar-brooke.png60d1.png?ln=ecuador-layout" alt="" />
+                            <div class="activity-container">
+                                <span class="name">Brooke Wright</span>
+                                <span class="activity">Read 4 recent news from timeline</span>
+                                <span class="activity-date">23.12.2015 12:00</span>
+                            </div>
+                        </li>
+                    </ul></div></div><script id="j_idt52_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt52",{id:"j_idt52"});</script>
+                
+                <div class="nano-scroll-footer"></div>
+            </div>
+        </div>
+    </div>
+
+<div class="layout-sidebar">
+        <div class="nano">
+            <div class="nano-content menu-scroll-content">
+<form id="menuform" name="menuform" method="post" action="https://www.primefaces.org/ecuador/dashboard.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="menuform" value="menuform" />
+
+                    <div class="layout-menu-title">MAIN MENU</div><ul id="menuform:j_idt63" class="layout-menu"><li id="menuform:om_dashboard" role="menuitem"><a href="dashboard.html"><i class="fa fa-fw fa-dashboard fa-fw"></i><span>Dashboard</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dashboard</div></div></li><li id="menuform:om_customization_mode" role="menuitem"><a href="#"><i class="fa fa-fw fa-cog fa-fw"></i><span>Menu Colors</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Menu Colors</div></div><ul role="menu"><li id="menuform:om_customization_mode_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_customization_mode_1':'menuform:om_customization_mode_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_customization_mode_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_customization_mode_2':'menuform:om_customization_mode_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_customization" role="menuitem"><a href="#"><i class="fa fa-fw fa-cog fa-fw"></i><span>Layouts</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Layouts</div></div><ul role="menu"><li id="menuform:om_customization_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_customization_1':'menuform:om_customization_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-bars fa-fw"></i><span>Static</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Static</div></div></li><li id="menuform:om_customization_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_customization_2':'menuform:om_customization_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-bars fa-fw"></i><span>Overlay</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Overlay</div></div></li><li id="menuform:om_customization_3" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_customization_3':'menuform:om_customization_3'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-bars fa-fw"></i><span>Slim</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Slim</div></div></li><li id="menuform:om_customization_4" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_customization_4':'menuform:om_customization_4'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-bars fa-fw"></i><span>Horizontal</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Horizontal</div></div></li></ul></li><li id="menuform:om_themes" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Themes</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i><span class="menuitem-badge">15</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Themes</div></div><ul role="menu"><li id="menuform:om_indigo" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Indigo</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Indigo</div></div><ul role="menu"><li id="menuform:om_indigo_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_indigo_1':'menuform:om_indigo_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_indigo_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_indigo_2':'menuform:om_indigo_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_pink" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Pink</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Pink</div></div><ul role="menu"><li id="menuform:om_pink_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_pink_1':'menuform:om_pink_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_pink_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_pink_2':'menuform:om_pink_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_green" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Green</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Green</div></div><ul role="menu"><li id="menuform:om_green_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_green_1':'menuform:om_green_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_green_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_green_2':'menuform:om_green_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_amber" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Amber</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Amber</div></div><ul role="menu"><li id="menuform:om_amber_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_amber_1':'menuform:om_amber_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_amber_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_amber_2':'menuform:om_amber_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_deeppurple" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Deep Purple</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Deep Purple</div></div><ul role="menu"><li id="menuform:om_deeppurple_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_deeppurple_1':'menuform:om_deeppurple_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_deeppurple_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_deeppurple_2':'menuform:om_deeppurple_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_blue" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Blue</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Blue</div></div><ul role="menu"><li id="menuform:om_blue_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_blue_1':'menuform:om_blue_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_blue_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_blue_2':'menuform:om_blue_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_darkblue" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark Blue</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark Blue</div></div><ul role="menu"><li id="menuform:om_darkblue_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_darkblue_1':'menuform:om_darkblue_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_darkblue_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_darkblue_2':'menuform:om_darkblue_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_cyan" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Cyan</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Cyan</div></div><ul role="menu"><li id="menuform:om_cyan_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_cyan_1':'menuform:om_cyan_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_cyan_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_cyan_2':'menuform:om_cyan_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_purple" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Purple</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Purple</div></div><ul role="menu"><li id="menuform:om_purple_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_purple_1':'menuform:om_purple_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_purple_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_purple_2':'menuform:om_purple_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_deeporange" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Deep Orange</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Deep Orange</div></div><ul role="menu"><li id="menuform:om_deeporange_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_deeporange_1':'menuform:om_deeporange_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_deeporange_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_deeporange_2':'menuform:om_deeporange_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_lime" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Lime</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Lime</div></div><ul role="menu"><li id="menuform:om_lime_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_lime_1':'menuform:om_lime_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_lime_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_lime_2':'menuform:om_lime_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_yellow" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Yellow</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Yellow</div></div><ul role="menu"><li id="menuform:om_yellow_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_yellow_1':'menuform:om_yellow_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_yellow_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_yellow_2':'menuform:om_yellow_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_bluegrey" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Blue Grey</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Blue Grey</div></div><ul role="menu"><li id="menuform:om_bluegrey_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_bluegrey_1':'menuform:om_bluegrey_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_bluegrey_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_bluegrey_2':'menuform:om_bluegrey_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_mojito" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Mojito</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Mojito</div></div><ul role="menu"><li id="menuform:om_mojito_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_mojito_1':'menuform:om_mojito_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_mojito_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_mojito_2':'menuform:om_mojito_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li><li id="menuform:om_grey" role="menuitem"><a href="#"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Grey</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Grey</div></div><ul role="menu"><li id="menuform:om_grey_1" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_grey_1':'menuform:om_grey_1'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Light</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Light</div></div></li><li id="menuform:om_grey_2" role="menuitem"><a href="#" onclick="PrimeFaces.addSubmitParam('menuform',{'menuform:om_grey_2':'menuform:om_grey_2'}).submit('menuform');return false;PrimeFaces.onPost();"><i class="fa fa-fw fa-paint-brush fa-fw"></i><span>Dark</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Dark</div></div></li></ul></li></ul></li><li id="menuform:om_components" role="menuitem"><a href="#"><i class="fa fa-fw fa-bars fa-fw"></i><span>Components</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Components</div></div><ul role="menu"><li id="menuform:om_sample" role="menuitem"><a href="sample.html"><i class="fa fa-fw fa-columns fa-fw"></i><span>Sample Page</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Sample Page</div></div></li><li id="menuform:om_forms" role="menuitem"><a href="forms.html"><i class="fa fa-fw fa-code fa-fw"></i><span>Forms</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Forms</div></div></li><li id="menuform:om_data" role="menuitem"><a href="data.html"><i class="fa fa-fw fa-table fa-fw"></i><span>Data</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Data</div></div></li><li id="menuform:om_panels" role="menuitem"><a href="panel.html"><i class="fa fa-fw fa-list-alt fa-fw"></i><span>Panels</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Panels</div></div></li><li id="menuform:om_overlays" role="menuitem"><a href="overlay.html"><i class="fa fa-fw fa-square fa-fw"></i><span>Overlays</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Overlays</div></div></li><li id="menuform:om_menus" role="menuitem"><a href="menu.html"><i class="fa fa-fw fa-minus-square-o fa-fw"></i><span>Menus</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Menus</div></div></li><li id="menuform:om_messages" role="menuitem"><a href="messages.html"><i class="fa fa-fw fa-circle-o-notch fa-fw"></i><span>Messages</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Messages</div></div></li><li id="menuform:om_charts" role="menuitem"><a href="charts.html"><i class="fa fa-fw fa-area-chart fa-fw"></i><span>Charts</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Charts</div></div></li><li id="menuform:om_file" role="menuitem"><a href="file.html"><i class="fa fa-fw fa-arrow-circle-o-up fa-fw"></i><span>File</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">File</div></div></li><li id="menuform:om_misc" role="menuitem"><a href="misc.html"><i class="fa fa-fw fa-user-secret fa-fw"></i><span>Misc</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Misc</div></div></li></ul></li><li id="menuform:om_default" role="menuitem"><a href="#"><i class="fa fa-fw fa-cube fa-fw"></i><span>Pages</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Pages</div></div><ul role="menu"><li id="menuform:om_empty" role="menuitem"><a href="empty.html"><i class="fa fa-fw fa-square-o fa-fw"></i><span>Empty</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Empty</div></div></li><li id="menuform:om_login" role="menuitem"><a href="login.html"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Login</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Login</div></div></li><li id="menuform:om_db_landing" role="menuitem"><a href="landing.html"><i class="fa fa-fw fa-certificate fa-fw"></i><span>Landing</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Landing</div></div></li><li id="menuform:om_error" role="menuitem"><a href="error.html"><i class="fa fa-fw fa-exclamation-circle fa-fw"></i><span>Error</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Error</div></div></li><li id="menuform:om_404" role="menuitem"><a href="404.html"><i class="fa fa-fw fa-times fa-fw"></i><span>404</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">404</div></div></li><li id="menuform:om_access" role="menuitem"><a href="access.html"><i class="fa fa-fw fa-exclamation-triangle fa-fw"></i><span>Access Denied</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Access Denied</div></div></li></ul></li><li id="menuform:om_hierarchy" role="menuitem"><a href="#"><i class="fa fa-fw fa-sitemap fa-fw"></i><span>Hierarchy</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Hierarchy</div></div><ul role="menu"><li id="menuform:om_sm1" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Submenu 1</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 1</div></div><ul role="menu"><li id="menuform:om_sm11" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Submenu 1.1</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 1.1</div></div><ul role="menu"><li id="menuform:om_lnk111" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Link 1.1.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.1.1</div></div></li><li id="menuform:om_lnk112" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Link 1.1.2</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.1.2</div></div></li><li id="menuform:om_lnk113" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Link 1.1.3</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.1.3</div></div></li></ul></li><li id="menuform:om_sm12" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Submenu 1.2</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 1.2</div></div><ul role="menu"><li id="menuform:om_lnk121" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Link 1.2.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 1.2.1</div></div></li></ul></li></ul></li><li id="menuform:om_sm2" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Submenu 2</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 2</div></div><ul role="menu"><li id="menuform:om_sm21" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Submenu 2.1</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 2.1</div></div><ul role="menu"><li id="menuform:om_lnk211" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Link 2.1.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 2.1.1</div></div></li><li id="menuform:om_lnk212" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Link 2.1.2</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 2.1.2</div></div></li></ul></li><li id="menuform:om_sm22" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Submenu 2.2</span><i class="fa fa-fw layout-submenu-toggler fa-angle-down"></i></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Submenu 2.2</div></div><ul role="menu"><li id="menuform:om_lnk221" role="menuitem"><a href="#"><i class="fa fa-fw fa-sign-in fa-fw"></i><span>Link 2.2.1</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Link 2.2.1</div></div></li></ul></li></ul></li></ul></li><li id="menuform:om_doc" role="menuitem"><a href="docs.html"><i class="fa fa-fw fa-file-code-o fa-fw"></i><span>Docs</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Docs</div></div></li><li id="menuform:om_buy" role="menuitem"><a href="https://www.primefaces.org/store"><i class="fa fa-fw fa-credit-card-alt fa-fw"></i><span>Buy Now</span></a><div class="layout-menu-tooltip"><div class="layout-menu-tooltip-arrow"></div><div class="layout-menu-tooltip-text">Buy Now</div></div></li></ul><script id="menuform:j_idt63_s" type="text/javascript">PrimeFaces.cw("Ecuador","me",{id:"menuform:j_idt63"});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="2318447326669324090:-3663899867756099695" autocomplete="off" />
+</form>
+            </div>
+        </div>
+    </div>
+
+            <div class="layout-main">
+                <div class="route-bar">
+                    <div class="route-bar-breadcrumb">
+                        <i class="fa fa-home"></i> 
+                        <span>/ </span>
+        <li><a href="dashboard.html" class="ui-link ui-widget">Dashboard</a></li>
+                    </div>
+                </div>
+                
+                <div class="layout-content" style="min-height:300px">
+        <div class="layout-dashboard">
+            <div class="ui-g">
+                <div class="ui-g-12 ui-md-6 ui-lg-3">
+                    <div class="overview-box sales"><img id="j_idt72" src="javax.faces.resource/images/icon-sales.png60d1.png?ln=ecuador-layout" alt="" class="image-icon" />
+                        <div class="overview-title">SALES</div>
+                        <div class="overview-numbers">
+                            $ 32,700
+                        </div>
+                        <div class="overview-subinfo">
+                            <div class="ui-g-6 progressbar">
+                                <div class="progress sale"></div>
+                            </div>
+                            <span class="ui-g-6">23% more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-3">
+                    <div class="overview-box views"><img id="j_idt74" src="javax.faces.resource/images/icon-views.png60d1.png?ln=ecuador-layout" alt="" style="margin-top:10px" />
+                        <div class="overview-title">VIEWS</div>
+                        <div class="overview-numbers">
+                            21,009
+                        </div>
+                        <div class="overview-subinfo">
+                            <div class="ui-g-6 progressbar">
+                                <div class="progress view"></div>
+                            </div>
+                            <span class="ui-g-6">7% more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-3">
+                    <div class="overview-box users"><img id="j_idt76" src="javax.faces.resource/images/icon-users.png60d1.png?ln=ecuador-layout" alt="" />
+                        <div class="overview-title">USERS</div>
+                        <div class="overview-numbers">
+                            3,270
+                        </div>
+                        <div class="overview-subinfo user">
+                            <i class="fa fa-circle"></i>
+                            <span>Same</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-3">
+                    <div class="overview-box checkins"><img id="j_idt78" src="javax.faces.resource/images/icon-checkin.png60d1.png?ln=ecuador-layout" alt="" class="image-icon" />
+                        <div class="overview-title">CHECK-INS</div>
+                        <div class="overview-numbers">
+                            704
+                        </div>
+                        <div class="overview-subinfo checkin">
+                            <i class="fa fa-circle"></i>
+                            <span>Same</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-g-12 ui-md-12 ui-lg-4"><div id="j_idt80" class="ui-panel ui-widget ui-widget-content ui-corner-all contacts" data-widget="widget_j_idt80"><div id="j_idt80_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Contacts</span></div><div id="j_idt80_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li><img id="j_idt82" src="javax.faces.resource/images/avatar-brooke.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="seperator"></div>
+                                <div class="team-box">
+                                    <span class="team-member">Brooke Wright</span>
+                                    <div>
+                                        <i class="fa fa-envelope"></i>
+                                        <span class="team-member-mail">brooke@test.com</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-map-pin"></i>
+                                        <span class="team-member-address">153 Cold Valley Road</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><img id="j_idt84" src="javax.faces.resource/images/avatar-maggie.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="seperator"></div>
+                                <div class="team-box">
+                                    <span class="team-member">Maggie Walker</span>
+                                    <div>
+                                        <i class="fa fa-envelope"></i>
+                                        <span class="team-member-mail">maggie@test.com</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-map-pin"></i>
+                                        <span class="team-member-address">5698 Anderson Street</span>
+                                    </div>         
+                                </div>
+                            </li>
+                            <li><img id="j_idt86" src="javax.faces.resource/images/avatar-tom.png60d1.png?ln=ecuador-layout" alt="" />
+                                <div class="seperator"></div>
+                                <div class="team-box">
+                                    <span class="team-member">Tom Baker</span>
+                                    <div>
+                                        <i class="fa fa-envelope"></i>
+                                        <span class="team-member-mail">tom@example.com</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-map-pin"></i>
+                                        <span class="team-member-address">2304 Billy Bill Lane</span>
+                                    </div>                                   
+                                </div>
+                            </li>
+                        </ul></div></div><script id="j_idt80_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt80",{id:"j_idt80"});</script>
+                </div>
+                <div class="ui-g-12 ui-md-12 ui-lg-4"><div id="j_idt89" class="ui-panel ui-widget ui-widget-content ui-corner-all tasks" data-widget="widget_j_idt89"><div id="j_idt89_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Tasks</span></div><div id="j_idt89_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li><div id="j_idt91" class="ui-selectbooleancheckbox ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt91_input" name="j_idt91_input" type="checkbox" autocomplete="off" aria-hidden="true" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt91_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt91",{id:"j_idt91"});</script>
+                                <span>Sales Reports</span>
+                                <div class="time-badge">
+                                    <span>TODAY</span>
+                                </div>
+                            </li>
+                            <li><div id="j_idt93" class="ui-selectbooleancheckbox ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt93_input" name="j_idt93_input" type="checkbox" autocomplete="off" aria-hidden="true" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt93_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt93",{id:"j_idt93"});</script>
+                                <span>Pay Invoices</span>
+                                <div class="time-badge">
+                                    <span>1 D</span>
+                                </div>
+                            </li>
+                            <li><div id="j_idt95" class="ui-selectbooleancheckbox ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt95_input" name="j_idt95_input" type="checkbox" autocomplete="off" aria-hidden="true" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt95_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt95",{id:"j_idt95"});</script>
+                                <span>Jenny's Birthday</span>
+                                <div class="time-badge">
+                                    <span>1 D</span>
+                                </div>
+                            </li>
+                            <li><div id="j_idt97" class="ui-selectbooleancheckbox ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt97_input" name="j_idt97_input" type="checkbox" autocomplete="off" aria-hidden="true" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt97_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt97",{id:"j_idt97"});</script>
+                                <span>Client Meeting</span>
+                                <div class="time-badge">
+                                    <span>2 D</span>
+                                </div>
+                            </li>
+                            <li><div id="j_idt99" class="ui-selectbooleancheckbox ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt99_input" name="j_idt99_input" type="checkbox" autocomplete="off" aria-hidden="true" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt99_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt99",{id:"j_idt99"});</script>
+                                <span>Flight Ticket</span>
+                                <div class="time-badge">
+                                    <span>5 D</span>
+                                </div>
+                            </li>
+                            <li><div id="j_idt101" class="ui-selectbooleancheckbox ui-chkbox ui-widget"><div class="ui-helper-hidden-accessible"><input id="j_idt101_input" name="j_idt101_input" type="checkbox" autocomplete="off" aria-hidden="true" aria-checked="false" /></div><div class="ui-chkbox-box ui-widget ui-corner-all ui-state-default"><span class="ui-chkbox-icon ui-icon ui-icon-blank ui-c"></span></div></div><script id="j_idt101_s" type="text/javascript">PrimeFaces.cw("SelectBooleanCheckbox","widget_j_idt101",{id:"j_idt101"});</script>
+                                <span>New Themes</span>
+                                <div class="time-badge">
+                                    <span>LATER</span>
+                                </div>
+                            </li>
+                        </ul></div></div><script id="j_idt89_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt89",{id:"j_idt89"});</script>
+                </div>
+                <div class="ui-g-12 ui-md-12 ui-lg-4"><div id="j_idt104" class="ui-panel ui-widget ui-widget-content ui-corner-all resolution-center" data-widget="widget_j_idt104"><div id="j_idt104_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Resolution Center</span></div><div id="j_idt104_content" class="ui-panel-content ui-widget-content"><input id="j_idt105" name="j_idt105" type="text" placeholder="Name" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all" /><script id="j_idt105_s" type="text/javascript">PrimeFaces.cw("InputText","widget_j_idt105",{id:"j_idt105"});</script><div id="console" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all" role="combobox" aria-haspopup="true" aria-expanded="false"><div class="ui-helper-hidden-accessible"><input id="console_focus" name="console_focus" type="text" autocomplete="off" aria-expanded="false" /></div><div class="ui-helper-hidden-accessible"><select id="console_input" name="console_input" tabindex="-1" aria-hidden="true"><option value="">Select One</option><option value="Emails">Emails</option><option value="System">System</option><option value="Billing">Billing</option></select></div><label id="console_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="console_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"><div class="ui-selectonemenu-items-wrapper" style="max-height:200px"><ul id="console_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Select One" tabindex="-1" role="option">Select One</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Emails" tabindex="-1" role="option">Emails</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="System" tabindex="-1" role="option">System</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="Billing" tabindex="-1" role="option">Billing</li></ul></div></div></div><script id="console_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_console",{id:"console"});});</script><textarea id="j_idt110" name="j_idt110" cols="20" rows="3" placeholder="Your Message" maxlength="2147483647" class="ui-inputfield ui-inputtextarea ui-widget ui-state-default ui-corner-all"></textarea><script id="j_idt110_s" type="text/javascript">$(function(){PrimeFaces.cw("InputTextarea","widget_j_idt110",{id:"j_idt110",autoResize:false});});</script><button id="j_idt111" name="j_idt111" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">Send</span></button><script id="j_idt111_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt111",{id:"j_idt111"});</script></div></div><script id="j_idt104_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt104",{id:"j_idt104"});</script>
+                </div>  
+
+                <div class="ui-g-12 ui-md-12 ui-lg-12 ui-xl-6"><div id="j_idt113" class="ui-panel ui-widget ui-widget-content ui-corner-all statistics ui-g" data-widget="widget_j_idt113"><div id="j_idt113_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Statistics</span></div><div id="j_idt113_content" class="ui-panel-content ui-widget-content">
+                        <div class="ui-g-12 ui-md-6 ui-lg-6 ui-xl-6 left-side">
+                            <i class="fa fa-level-up"></i>
+                            <span class="icon-label">Raised</span>
+                            <span>$ 85,397</span>
+                            <div class="statsbar">
+                                <div class="statsbar-value" style="width: 50%"></div>
+                            </div>
+                            <i class="fa fa-usd"></i>
+                            <span class="icon-label">Current Period Price</span>
+                            <span>$ 194</span>
+                            <div class="statsbar">
+                                <div class="statsbar-value" style="width: 75%"></div>
+                            </div>
+                            <i class="fa fa-history"></i>
+                            <span class="icon-label">Remaining</span>
+                            <span>16:01:53</span>
+                            <div class="statsbar">
+                                <div class="statsbar-value" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        <div class="ui-g-12 ui-md-6 ui-lg-6 ui-xl-6 right-side">
+                            <div>
+                                <i class="fa fa-level-up"></i>
+                                <span>50%</span>
+                                <i class="fa fa-usd"></i>
+                                <span>75%</span>
+                                <i class="fa fa-history"></i>
+                                <span>25%</span>
+                            </div>
+                            <div class="knob-container">
+                                <div class="knob">81%</div>
+                            </div>
+                            <div class="details">
+                                <span>See Details</span>
+                                <i class="fa fa-chevron-right"></i>
+                            </div>
+                        </div></div></div><script id="j_idt113_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt113",{id:"j_idt113"});</script>
+                </div>
+                <div class="ui-g-12 ui-md-12 ui-lg-12 ui-xl-6"><div id="j_idt116" class="ui-panel ui-widget ui-widget-content ui-corner-all global-sales" data-widget="widget_j_idt116"><div id="j_idt116_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Global Sales</span></div><div id="j_idt116_content" class="ui-panel-content ui-widget-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th class="country">Country</th>
+                                    <th>Total</th>
+                                    <th>Percentage</th>
+                                    <th>Change</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="country"><img id="j_idt118" src="javax.faces.resource/images/flag-usa.png60d1.png?ln=ecuador-layout" alt="" />
+                                        <span>USA</span>
+                                    </td>
+                                    <td>91,382 $</td>
+                                    <td>71%</td>
+                                    <td>
+                                        <i class="fa fa-caret-up up"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="country"><img id="j_idt120" src="javax.faces.resource/images/flag-brasil.png60d1.png?ln=ecuador-layout" alt="" />
+                                        <span>Brasil</span>
+                                    </td>
+                                    <td>1,902 $</td>
+                                    <td>9%</td>
+                                    <td>
+                                        <i class="fa fa-caret-down down"></i>
+                                    </td>
+                                </tr>
+                                <tr>                                    
+                                    <td>3</td>
+                                    <td class="country"><img id="j_idt122" src="javax.faces.resource/images/flag-india.png60d1.png?ln=ecuador-layout" alt="" />
+                                        <span>India</span>
+                                    </td>
+                                    <td>3,418 $</td>
+                                    <td>19%</td>
+                                    <td>
+                                        <i class="fa fa-caret-down down"></i>
+                                    </td>
+                                </tr>
+                                <tr>                                    
+                                    <td>4</td>
+                                    <td class="country"><img id="j_idt124" src="javax.faces.resource/images/flag-germany.png60d1.png?ln=ecuador-layout" alt="" />
+                                        <span>Germany</span>
+                                    </td>
+                                    <td>74,293 $</td>
+                                    <td>62%</td>
+                                    <td>
+                                        <i class="fa fa-caret-up up"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="country"><img id="j_idt126" src="javax.faces.resource/images/flag-spain.png60d1.png?ln=ecuador-layout" alt="" />
+                                        <span>Spain</span>
+                                    </td>
+                                    <td>32,849 $</td>
+                                    <td>28%</td>
+                                    <td>
+                                        <i class="fa fa-caret-down down"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="country"><img id="j_idt128" src="javax.faces.resource/images/flag-france.png60d1.png?ln=ecuador-layout" alt="" />
+                                        <span>France</span>
+                                    </td>
+                                    <td>40,619 $</td>
+                                    <td>34%</td>
+                                    <td>
+                                        <i class="fa fa-caret-up up"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table></div></div><script id="j_idt116_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt116",{id:"j_idt116"});</script>
+                </div>
+
+                <div class="ui-g-12 ui-md-12 ui-lg-4"><div id="j_idt131" class="ui-panel ui-widget ui-widget-content ui-corner-all profile" data-widget="widget_j_idt131"><div id="j_idt131_content" class="ui-panel-content ui-widget-content">
+                        <div class="bg-image">
+                        </div>
+                        <div class="profile-info"><img id="j_idt133" src="javax.faces.resource/images/avatar-jeniffer.png60d1.png?ln=ecuador-layout" alt="" class="profile-image" />
+
+                            <span class="name">Jeniffer Reynolds</span>
+                            <div>
+                                <i class="fa fa-briefcase"></i>
+                                <span class="job">Human Resource Manager</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-location-arrow"></i>
+                                <span class="location">Seattle</span>
+                            </div>
+                            <div>
+                                <div class="profile-numbers">
+                                    <span class="header">Views</span>
+                                    <span class="number">381</span>
+                                </div>
+                                <div class="profile-numbers">
+                                    <span class="header">Followers</span>
+                                    <span class="number">492</span>
+                                </div>
+                                <div class="profile-numbers">
+                                    <span class="header">Likes</span>
+                                    <span class="number">1,395</span>
+                                </div>
+                            </div>
+                        </div></div></div><script id="j_idt131_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt131",{id:"j_idt131"});</script><div id="j_idt135" class="ui-panel ui-widget ui-widget-content ui-corner-all timeline" data-widget="widget_j_idt135"><div id="j_idt135_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Account Timeline</span></div><div id="j_idt135_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li>
+                                <div class="date-indicator">
+                                    <span class="date">today</span>
+                                    <span class="time">08:32</span>
+                                </div>
+                                <div class="activity-link"></div>
+                                <i class="fa fa-circle success"></i>
+                                <div class="timeline-subject">
+                                    <span class="timeline-header">Login to system</span>
+                                    <span class="timeline-subheader">automatic login</span>
+                                </div>
+                                <i class="fa fa-laptop device success"></i>
+                            </li>
+                            <li>
+                                <div class="date-indicator">
+                                    <span class="date">today</span>
+                                    <span class="time">00:07</span>
+                                </div>
+                                <div class="activity-link"></div>
+                                <i class="fa fa-circle success"></i>
+                                <div class="timeline-subject">
+                                    <span class="timeline-header">Login to system</span>
+                                    <span class="timeline-subheader">automatic login</span>
+                                </div>
+                                <i class="fa fa-tablet device success"></i>
+                            </li>
+                            <li>
+                                <div class="date-indicator">
+                                    <span class="date">1 d</span>
+                                    <span class="time">13:37</span>
+                                </div>
+                                <div class="activity-link"></div>
+                                <i class="fa fa-circle error"></i>
+                                <div class="timeline-subject">
+                                    <span class="timeline-header">Usename error</span>
+                                    <span class="timeline-subheader">changed username</span>
+                                </div>
+                                <i class="fa fa-laptop device error"></i>
+                            </li>
+                            <li>
+                                <div class="date-indicator">
+                                    <span class="date">1 d</span>
+                                    <span class="time">08:30</span>
+                                </div>
+                                <div class="activity-link"></div>
+                                <i class="fa fa-circle success"></i>
+                                <div class="timeline-subject">
+                                    <span class="timeline-header">Login to system</span>
+                                    <span class="timeline-subheader">manual login</span>
+                                </div>
+                                <i class="fa fa-laptop device success"></i>
+                            </li>
+                            <li>
+                                <div class="date-indicator">
+                                    <span class="date">2 d</span>
+                                    <span class="time">13:41</span>
+                                </div>
+                                <div class="activity-link"></div>
+                                <i class="fa fa-circle success"></i>
+                                <div class="timeline-subject">
+                                    <span class="timeline-header">Login to system</span>
+                                    <span class="timeline-subheader">automatic login</span>
+                                </div>
+                                <i class="fa fa-laptop device success"></i>
+                            </li>
+                            <li>
+                                <div class="date-indicator">
+                                    <span class="date">2 d</span>
+                                    <span class="time">09:03</span>
+                                </div>
+                                <div class="activity-link"></div>
+                                <i class="fa fa-circle error"></i>
+                                <div class="timeline-subject">
+                                    <span class="timeline-header">Incorrect password</span>
+                                    <span class="timeline-subheader">access denied</span>
+                                </div>
+                                <i class="fa fa-mobile device error"></i>
+                            </li>
+                            <li>
+                                <div class="date-indicator">
+                                    <span class="date">3 d</span>
+                                    <span class="time">23:48</span>
+                                </div>
+                                <div class="activity-link"></div>
+                                <i class="fa fa-circle success"></i>
+                                <div class="timeline-subject">
+                                    <span class="timeline-header">Login to system</span>
+                                    <span class="timeline-subheader">retina scan</span>
+                                </div>
+                                <i class="fa fa-mobile device success"></i>
+                            </li>
+                            <li>
+                                <div class="date-indicator">
+                                    <span class="date">3 d</span>
+                                    <span class="time">13:33</span>
+                                </div>
+                                <div class="activity-link"></div>
+                                <i class="fa fa-circle code"></i>
+                                <div class="timeline-subject">
+                                    <span class="timeline-header">Exceptional error</span>
+                                    <span class="timeline-subheader">Code 2ff26982284</span>
+                                </div>
+                                <i class="fa fa-laptop device code"></i>
+                            </li>
+                            <li>
+                                <div class="date-indicator">
+                                    <span class="date">13 d</span>
+                                    <span class="time">08:39</span>
+                                </div>
+                                <div class="activity-link"></div>
+                                <i class="fa fa-circle success"></i>
+                                <div class="timeline-subject">
+                                    <span class="timeline-header">Login to system</span>
+                                    <span class="timeline-subheader">automatic login</span>
+                                </div>
+                                <i class="fa fa-laptop device success"></i>
+                            </li>
+                        </ul></div></div><script id="j_idt135_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt135",{id:"j_idt135"});</script>
+                </div>
+                <div class="ui-g-12 ui-md-12 ui-lg-8"><div id="j_idt138" class="ui-panel ui-widget ui-widget-content ui-corner-all inbox" data-widget="widget_j_idt138"><div id="j_idt138_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Inbox</span></div><div id="j_idt138_content" class="ui-panel-content ui-widget-content">
+                        <ul>
+                            <li>
+                                <div class="image-container"><img id="j_idt140" src="javax.faces.resource/images/avatar-maggie.png60d1.png?ln=ecuador-layout" alt="" />
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="message-box">
+                                    <span class="messager">Maggie Walker</span>
+                                    <span class="time">23 mins</span>   
+                                    <span class="message">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribu…</span>       
+                                </div>
+                                <div class="message-status">
+                                    <i class="fa fa-circle"></i>
+                                    <span>562</span>
+                                </div>    
+                            </li>
+                            <li>
+                                <div class="image-container"><img id="j_idt142" src="javax.faces.resource/images/avatar-brooke.png60d1.png?ln=ecuador-layout" alt="" />
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="message-box">
+                                    <span class="messager">Brooke Wright</span>
+                                    <span class="time">5 hours</span>   
+                                    <span class="message">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>       
+                                </div>
+                                <div class="message-status">
+                                    <i class="fa fa-circle"></i>
+                                    <span>149</span>
+                                </div>
+                            </li>               
+                            <li>
+                                <div class="image-container"><img id="j_idt144" src="javax.faces.resource/images/avatar-tom.png60d1.png?ln=ecuador-layout" alt="" />
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="message-box">
+                                    <span class="messager">Tom Baker</span>
+                                    <span class="time">19 hours</span>   
+                                    <span class="message">It is a long established fact that a reader will be distracted by the readable content.</span>       
+                                </div>
+                                <div class="message-status">
+                                    <i class="fa fa-circle unread"></i>
+                                    <span>74</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image-container"><img id="j_idt146" src="javax.faces.resource/images/avatar-lucas.png60d1.png?ln=ecuador-layout" alt="" />
+                                </div>
+                                <div class="seperator"></div>
+                                <div class="message-box">
+                                    <span class="messager">Lucas Fox</span>
+                                    <span class="time">1 day</span>   
+                                    <span class="message">It is a long established fact that a reader will be distracted by the readable contentof a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</span>       
+                                </div>
+                                <div class="message-status">
+                                    <i class="fa fa-circle unread"></i>
+                                    <span>250</span>
+                                </div>
+                            </li>
+                        </ul></div></div><script id="j_idt138_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt138",{id:"j_idt138"});</script><div id="j_idt148" class="ui-panel ui-widget ui-widget-content ui-corner-all projects" data-widget="widget_j_idt148"><div id="j_idt148_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Projects</span></div><div id="j_idt148_content" class="ui-panel-content ui-widget-content">
+                            <ul>
+                                <li> 
+                                    <div class="project-info">
+                                        <span class="project-name">Morpheus</span>
+                                        <span class="project-firm">PrimeFaces</span>
+                                    </div>
+                                    <div class="person-container">
+                                        <div class="persons"><img id="j_idt150" src="javax.faces.resource/images/faces-morpheus.png60d1.png?ln=ecuador-layout" alt="" />
+                                        </div>
+                                        <span>24 people interested</span>
+                                    </div>
+                                    <div class="button"><button id="j_idt152" name="j_idt152" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">See Details</span></button><script id="j_idt152_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt152",{id:"j_idt152"});</script>
+                                    </div>                            
+                                </li>
+                                <li> 
+                                    <div class="project-info">
+                                        <span class="project-name">Ultima</span>
+                                        <span class="project-firm">PrimeFaces</span>
+                                    </div>
+                                    <div class="person-container">
+                                        <div class="persons"><img id="j_idt154" src="javax.faces.resource/images/faces-ultima.png60d1.png?ln=ecuador-layout" alt="" />
+                                        </div>
+                                        <span>32 people interested</span>
+                                    </div>
+                                    <div class="button"><button id="j_idt156" name="j_idt156" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">See Details</span></button><script id="j_idt156_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt156",{id:"j_idt156"});</script>
+                                    </div>                            
+                                </li>
+                                <li> 
+                                    <div class="project-info">
+                                        <span class="project-name">Poseidon</span>
+                                        <span class="project-firm">PrimeFaces</span>
+                                    </div>
+                                    <div class="person-container">
+                                        <div class="persons"><img id="j_idt158" src="javax.faces.resource/images/faces-poseidon.png60d1.png?ln=ecuador-layout" alt="" />
+                                        </div>
+                                        <span>37 people interested</span>
+                                    </div>
+                                    <div class="button"><button id="j_idt160" name="j_idt160" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">See Details</span></button><script id="j_idt160_s" type="text/javascript">PrimeFaces.cw("CommandButton","widget_j_idt160",{id:"j_idt160"});</script>
+                                    </div>
+                                </li>
+                            </ul></div></div><script id="j_idt148_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt148",{id:"j_idt148"});</script><div id="j_idt162" class="ui-panel ui-widget ui-widget-content ui-corner-all table" data-widget="widget_j_idt162"><div id="j_idt162_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Inventory</span></div><div id="j_idt162_content" class="ui-panel-content ui-widget-content"><div id="j_idt163" class="ui-datatable ui-widget ui-datatable-reflow"><label id="j_idt163_reflowDD_label" for="j_idt163_reflowDD" class="ui-reflow-label">Sort</label><select id="j_idt163_reflowDD" name="j_idt163_reflowDD" class="ui-reflow-dropdown ui-state-default" autocomplete="off"><option value="0_0">ID Ascending</option><option value="0_1">ID Descending</option><option value="1_0">Year Ascending</option><option value="1_1">Year Descending</option><option value="2_0">Brand Ascending</option><option value="2_1">Brand Descending</option><option value="3_0">Color Ascending</option><option value="3_1">Color Descending</option></select><div id="j_idt163_paginator_top" class="ui-paginator ui-paginator-top ui-widget-header ui-corner-top" role="navigation" aria-label="Pagination"><a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page" tabindex="-1"><span class="ui-icon ui-icon-seek-first">F</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page" tabindex="-1"><span class="ui-icon ui-icon-seek-prev">P</span></a><span class="ui-paginator-pages"><a class="ui-paginator-page ui-state-default ui-state-active ui-corner-all" tabindex="0" href="#">1</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">2</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">3</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">4</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">5</a></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all" aria-label="Next Page" tabindex="0"><span class="ui-icon ui-icon-seek-next">N</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all" aria-label="Last Page" tabindex="0"><span class="ui-icon ui-icon-seek-end">E</span></a></div><div class="ui-datatable-tablewrapper"><table role="grid"><thead id="j_idt163_head"><tr role="row"><th id="j_idt163:j_idt164" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="ID" scope="col"><span class="ui-column-title">ID</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="j_idt163:j_idt166" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Year" scope="col"><span class="ui-column-title">Year</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="j_idt163:j_idt168" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Brand" scope="col"><span class="ui-column-title">Brand</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th><th id="j_idt163:j_idt170" class="ui-state-default ui-sortable-column" role="columnheader" aria-label="Color" scope="col"><span class="ui-column-title">Color</span><span class="ui-sortable-column-icon ui-icon ui-icon-carat-2-n-s"></span></th></tr></thead><tbody id="j_idt163_data" class="ui-datatable-data ui-widget-content" tabindex="0"><tr data-ri="0" data-rk="107cc5f9" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">107cc5f9</td><td role="gridcell">1962</td><td role="gridcell">Volvo</td><td role="gridcell">Red</td></tr><tr data-ri="1" data-rk="a3cf463f" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">a3cf463f</td><td role="gridcell">2003</td><td role="gridcell">Mercedes</td><td role="gridcell">White</td></tr><tr data-ri="2" data-rk="86520309" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">86520309</td><td role="gridcell">1977</td><td role="gridcell">Volvo</td><td role="gridcell">White</td></tr><tr data-ri="3" data-rk="7986a9ee" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">7986a9ee</td><td role="gridcell">1998</td><td role="gridcell">Audi</td><td role="gridcell">Maroon</td></tr><tr data-ri="4" data-rk="18dba4a6" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">18dba4a6</td><td role="gridcell">1962</td><td role="gridcell">Fiat</td><td role="gridcell">Yellow</td></tr><tr data-ri="5" data-rk="be8477de" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">be8477de</td><td role="gridcell">1999</td><td role="gridcell">Jaguar</td><td role="gridcell">Black</td></tr><tr data-ri="6" data-rk="3a574ab7" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">3a574ab7</td><td role="gridcell">1974</td><td role="gridcell">Renault</td><td role="gridcell">Silver</td></tr><tr data-ri="7" data-rk="c01d78ae" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">c01d78ae</td><td role="gridcell">1985</td><td role="gridcell">BMW</td><td role="gridcell">Brown</td></tr><tr data-ri="8" data-rk="24db1110" class="ui-widget-content ui-datatable-even ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">24db1110</td><td role="gridcell">1970</td><td role="gridcell">Volvo</td><td role="gridcell">Orange</td></tr><tr data-ri="9" data-rk="495fc726" class="ui-widget-content ui-datatable-odd ui-datatable-selectable" role="row" aria-selected="false"><td role="gridcell">495fc726</td><td role="gridcell">1980</td><td role="gridcell">Jaguar</td><td role="gridcell">White</td></tr></tbody></table></div><div id="j_idt163_paginator_bottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bottom" role="navigation" aria-label="Pagination"><a href="#" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled" aria-label="First Page" tabindex="-1"><span class="ui-icon ui-icon-seek-first">F</span></a><a href="#" class="ui-paginator-prev ui-state-default ui-corner-all ui-state-disabled" aria-label="Previous Page" tabindex="-1"><span class="ui-icon ui-icon-seek-prev">P</span></a><span class="ui-paginator-pages"><a class="ui-paginator-page ui-state-default ui-state-active ui-corner-all" tabindex="0" href="#">1</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">2</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">3</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">4</a><a class="ui-paginator-page ui-state-default ui-corner-all" tabindex="0" href="#">5</a></span><a href="#" class="ui-paginator-next ui-state-default ui-corner-all" aria-label="Next Page" tabindex="0"><span class="ui-icon ui-icon-seek-next">N</span></a><a href="#" class="ui-paginator-last ui-state-default ui-corner-all" aria-label="Last Page" tabindex="0"><span class="ui-icon ui-icon-seek-end">E</span></a></div><input type="hidden" id="j_idt163_selection" name="j_idt163_selection" autocomplete="off" value="" /></div><script id="j_idt163_s" type="text/javascript">$(function(){PrimeFaces.cw("DataTable","widget_j_idt163",{id:"j_idt163",paginator:{id:['j_idt163_paginator_top','j_idt163_paginator_bottom'],rows:10,rowCount:50,page:0,currentPageTemplate:'({currentPage} of {totalPages})'},selectionMode:"single",reflow:true,groupColumnIndexes:[]});});</script></div></div><script id="j_idt162_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt162",{id:"j_idt162"});</script>
+                </div>
+
+                <div class="ui-g-12 ui-md-12 ui-lg-12"><div id="j_idt173" class="ui-panel ui-widget ui-widget-content ui-corner-all" style="height:100%" data-widget="widget_j_idt173"><div id="j_idt173_header" class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all"><span class="ui-panel-title">Upcoming Events</span></div><div id="j_idt173_content" class="ui-panel-content ui-widget-content"><div id="j_idt174"><div id="j_idt174_container"></div><input type="hidden" id="j_idt174_view" name="j_idt174_view" autocomplete="off" value="month" /></div><script id="j_idt174_s" type="text/javascript">$(function(){PrimeFaces.cw("Schedule","widget_j_idt174",{id:"j_idt174",defaultView:"month",locale:"en_US",lazyFetching:false,header:{left:'prev,next today',center:"title",right:"month,agendaWeek,agendaDay"}});});</script></div></div><script id="j_idt173_s" type="text/javascript">PrimeFaces.cw("Panel","widget_j_idt173",{id:"j_idt173"});</script>
+                </div>
+            </div>
+        </div>
+                </div>
+
+                <div class="layout-footer">
+
+    <div class="ui-g">
+        <div class="ui-g-12 ui-md-12 ui-lg-4 logo-container-outer"><a href="dashboard.html" class="logo-container"><img id="j_idt179" src="javax.faces.resource/images/ecuador-orange-logo.png60d1.png?ln=ecuador-layout" alt="" />
+                <span class="app-name">Premium PrimeFaces Application Template</span></a>
+        </div>
+        <div class="ui-g-12 ui-md-12 ui-lg-8" style="text-align:center">
+            <div id="footer-menu">
+                <div class="ui-g-12 ui-md-6 ui-lg-3 footer-box">
+                    <span>OVERVIEW</span>
+                    <a href="#primefaces">Why PrimeFaces</a>
+                    <a href="#prime">Who Uses PrimeFaces</a>                        
+                    <a href="#testimonials">Testimonials</a>                        
+                    <a href="#licence">License</a>                        
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-3 footer-box">
+                    <span>DEMOS</span>                        
+                    <a href="#faces">PrimeFaces</a>                        
+                    <a href="#ng">PrimeNG</a>                        
+                    <a href="#react">PrimeReact</a>                    
+                    <a href="#ui">PrimeUI</a>
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-3 footer-box">
+                    <span>SUPPORT</span>
+                    <a href="#options">Support Options</a>                            
+                    <a href="#pro">PrimeFaces PRO</a>                        
+                    <a href="#elite">PrimeFaces Elite</a>                        
+                    <a href="#forum">Forum</a>                        
+                </div>
+                <div class="ui-g-12 ui-md-6 ui-lg-3 footer-box">
+                    <span>SOCIAL</span>
+                    <a href="#twitter" class="icon-link"><i class="fa fa-twitter icon"></i></a>
+                    <a href="#facebook" class="icon-link"><i class="fa fa-facebook icon"></i></a>
+                    <a href="#github" class="icon-link"><i class="fa fa-github icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div><div id="j_idt183" class="layout-ajax-loader"><div id="j_idt183_start" style="display:none">
+                    <i class="fa fa-circle-o-notch fa-spin layout-ajax-loader-icon" aria-hidden="true"></i></div><div id="j_idt183_complete" style="display:none"></div></div><script id="j_idt183_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt183",{id:"j_idt183"});});</script>
+        </div></body>
+
+
+<!-- Mirrored from www.primefaces.org/ecuador/dashboard.xhtml by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Aug 2018 04:58:41 GMT -->
+</html>
